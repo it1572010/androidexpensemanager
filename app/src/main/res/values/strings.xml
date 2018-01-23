@@ -12,7 +12,7 @@
     <string name="register_register">Register</string>
     <string name="menu_income">Income</string>
     <string name="menu_outcome">Outcome</string>
-    <string name="menu_reportEspense"
+    <string name="menu_reportExpense">Report Expense</string>
     <string name="income_category">Category</string>
     <string name="income_money">Money</string>
     <string name="income_kurs">Kurs</string>
