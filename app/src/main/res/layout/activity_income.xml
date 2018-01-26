@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -18,7 +18,7 @@
             android:text="TextView" />
 
         <Spinner
-            android:id="@+id/spinner"
+            android:id="@+id/cmbCategory"
             android:layout_width="match_parent"
             android:layout_height="68dp" />
 
@@ -29,12 +29,13 @@
             android:text="TextView" />
 
         <EditText
+            android:id="@+id/txtInformation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="@string/income_information"
             android:inputType="textPersonName"
-            android:text=""
-            android:hint="@string/income_information"/>
+            android:text="" />
 
         <TextView
             android:id="@+id/textView3"
@@ -48,12 +49,18 @@
             android:layout_height="wrap_content" />
 
         <EditText
-            android:id="@+id/editText4"
+            android:id="@+id/txtMoney"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="@string/income_money"
             android:inputType="textPersonName"
-            android:text=""
-            android:hint="@string/income_money"/>
+            android:text="" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/submit" />
     </LinearLayout>
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
