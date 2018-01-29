@@ -4,6 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/activity_margin_vertical"
+    android:layout_marginEnd="@dimen/activity_margin_horizontal"
+    android:layout_marginStart="@dimen/activity_margin_horizontal"
+    android:layout_marginTop="@dimen/activity_margin_vertical"
     tools:context="com.anthony.androidexpensemanager.IncomeActivity">
 
     <ScrollView
@@ -13,13 +17,14 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/textView4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/income_category" />
+                android:text="@string/income_category"
+                android:textSize="@dimen/activity_size_font" />
 
             <Spinner
                 android:id="@+id/cmbCategory"
@@ -30,7 +35,8 @@
                 android:id="@+id/textView3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/income_money" />
+                android:text="@string/income_money"
+                android:textSize="@dimen/activity_size_font" />
 
             <EditText
                 android:id="@+id/txtMoney"
@@ -45,7 +51,8 @@
                 android:id="@+id/textView5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/income_information" />
+                android:text="@string/income_information"
+                android:textSize="@dimen/activity_size_font" />
 
             <EditText
                 android:id="@+id/txtInformation"
@@ -59,7 +66,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/income_time" />
+                android:text="@string/income_time"
+                android:textSize="@dimen/activity_size_font" />
 
             <DatePicker
                 android:layout_width="match_parent"
@@ -69,7 +77,8 @@
                 android:id="@+id/btnSubmit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/submit" />
+                android:text="@string/submit"
+                android:textSize="@dimen/activity_size_font" />
         </LinearLayout>
     </ScrollView>
 

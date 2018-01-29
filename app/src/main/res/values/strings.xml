@@ -22,5 +22,7 @@
     <string name="income_kurs">Kurs</string>
     <string name="income_time">Time</string>
     <string name="income_information">Information</string>
+    <string name="setting_currency">Currency</string>
+    <string name="setting_budget">Budget</string>
     <string name="submit">Submit</string>
 </resources>

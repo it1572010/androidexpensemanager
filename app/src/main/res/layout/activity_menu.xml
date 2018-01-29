@@ -23,7 +23,8 @@
         android:id="@+id/txtIncome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:text="TextView"
+        android:textSize="@dimen/activity_size_font" />
 
     <TextView
         android:id="@+id/textView8"
@@ -36,7 +37,8 @@
         android:id="@+id/txtExpense"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:text="TextView"
+        android:textSize="@dimen/activity_size_font" />
 
     <TextView
         android:id="@+id/textView9"
@@ -49,7 +51,8 @@
         android:id="@+id/txtBalance"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:text="TextView"
+        android:textSize="@dimen/activity_size_font" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -62,14 +65,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/menu_newincome" />
+            android:text="@string/menu_newincome"
+            android:textSize="@dimen/activity_size_font" />
 
         <Button
             android:id="@+id/btnNewExpense"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/menu_newexpense" />
+            android:text="@string/menu_newexpense"
+            android:textSize="@dimen/activity_size_font" />
 
     </LinearLayout>
 
@@ -84,14 +89,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/menu_income" />
+            android:text="@string/menu_income"
+            android:textSize="@dimen/activity_size_font" />
 
         <Button
             android:id="@+id/btnExpense"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/menu_expense" />
+            android:text="@string/menu_expense"
+            android:textSize="@dimen/activity_size_font" />
 
     </LinearLayout>
 
@@ -100,5 +107,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="@string/menu_setting" />
+        android:text="@string/menu_setting"
+        android:textSize="@dimen/activity_size_font" />
 </LinearLayout>

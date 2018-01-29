@@ -20,7 +20,8 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/register_name" />
+            android:text="@string/register_name"
+            android:textSize="@dimen/activity_size_font" />
 
         <EditText
             android:id="@+id/txtName"
@@ -35,7 +36,8 @@
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/register_email" />
+            android:text="@string/register_email"
+            android:textSize="@dimen/activity_size_font" />
 
         <EditText
             android:id="@+id/txtEmail"
@@ -49,7 +51,8 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/register_password" />
+            android:text="@string/register_password"
+            android:textSize="@dimen/activity_size_font" />
 
         <EditText
             android:id="@+id/txtPassword"
@@ -62,7 +65,8 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/register_repassword" />
+            android:text="@string/register_repassword"
+            android:textSize="@dimen/activity_size_font" />
 
         <EditText
             android:id="@+id/txtRePassword"
@@ -76,7 +80,8 @@
             android:id="@+id/btnRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/register_register" />
+            android:text="@string/register_register"
+            android:textSize="@dimen/activity_size_font" />
 
     </LinearLayout>
 </LinearLayout>
