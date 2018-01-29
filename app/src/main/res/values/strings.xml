@@ -16,6 +16,7 @@
     <string name="menu_newexpense">New Expense</string>
     <string name="menu_balance">Balance</string>
     <string name="menu_reportExpense">Report Expense</string>
+    <string name="menu_setting">Setting</string>
     <string name="income_category">Category</string>
     <string name="income_money">Money</string>
     <string name="income_kurs">Kurs</string>

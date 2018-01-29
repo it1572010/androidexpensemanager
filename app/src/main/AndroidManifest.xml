@@ -19,7 +19,9 @@
         <activity android:name=".RegisterActivity" />
         <activity android:name=".MenuActivity" />
         <activity android:name=".IncomeActivity" />
-        <activity android:name=".ExpenseActivity"></activity>
+        <activity android:name=".ExpenseActivity" />
+        <activity android:name=".ReportIncomeActivity" />
+        <activity android:name=".ReportExpenseActivity"></activity>
     </application>
 
 </manifest>
