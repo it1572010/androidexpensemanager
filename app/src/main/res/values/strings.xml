@@ -11,7 +11,10 @@
     <string name="register_repassword">Re-Password</string>
     <string name="register_register">Register</string>
     <string name="menu_income">Income</string>
-    <string name="menu_outcome">Outcome</string>
+    <string name="menu_expense">Expense</string>
+    <string name="menu_newincome">New Income</string>
+    <string name="menu_newexpense">New Expense</string>
+    <string name="menu_balance">Balance</string>
     <string name="menu_reportExpense">Report Expense</string>
     <string name="income_category">Category</string>
     <string name="income_money">Money</string>
