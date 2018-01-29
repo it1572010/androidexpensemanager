@@ -21,7 +21,8 @@
         <activity android:name=".IncomeActivity" />
         <activity android:name=".ExpenseActivity" />
         <activity android:name=".ReportIncomeActivity" />
-        <activity android:name=".ReportExpenseActivity"></activity>
+        <activity android:name=".ReportExpenseActivity" />
+        <activity android:name=".SettingActivity"></activity>
     </application>
 
 </manifest>

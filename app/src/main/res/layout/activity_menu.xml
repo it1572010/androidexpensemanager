@@ -80,13 +80,14 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btnIncome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/menu_income" />
 
         <Button
+            android:id="@+id/btnExpense"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -95,6 +96,7 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/btnSetting"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"

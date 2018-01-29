@@ -26,4 +26,22 @@ public class MenuActivity extends AppCompatActivity {
         Intent moveToNewExpenseActivity=new Intent(MenuActivity.this,ExpenseActivity.class);
         startActivity(moveToNewExpenseActivity);
     }
+
+    @OnClick(R.id.btnIncome)
+    void btnIncomeAction(){
+        Intent moveToReportIncomeActivity=new Intent(MenuActivity.this,ReportIncomeActivity.class);
+        startActivity(moveToReportIncomeActivity);
+    }
+
+    @OnClick(R.id.btnExpense)
+    void btnExpenseAction(){
+        Intent moveToReportExpenseActivity=new Intent(MenuActivity.this,ReportExpenseActivity.class);
+        startActivity(moveToReportExpenseActivity);
+    }
+
+    @OnClick(R.id.btnSetting)
+    void btnSettingAction(){
+        Intent moveToSettingActivity=new Intent(MenuActivity.this,SettingActivity.class);
+        startActivity(moveToSettingActivity);
+    }
 }
