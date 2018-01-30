@@ -2,7 +2,6 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/btnNewIncome"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginBottom="@dimen/activity_margin_vertical"
@@ -12,101 +11,117 @@
     android:orientation="vertical"
     tools:context="com.anthony.androidexpensemanager.MenuActivity">
 
-    <TextView
-        android:id="@+id/textView6"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/menu_income"
-        android:textSize="@dimen/activity_size_font" />
+        android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/txtIncome"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textSize="@dimen/activity_size_font" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/menu_expense"
-        android:textSize="@dimen/activity_size_font" />
-
-    <TextView
-        android:id="@+id/txtExpense"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textSize="@dimen/activity_size_font" />
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/menu_balance"
-        android:textSize="@dimen/activity_size_font" />
-
-    <TextView
-        android:id="@+id/txtBalance"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textSize="@dimen/activity_size_font" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="180dp"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/btnNewIncome"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/menu_newincome"
-            android:textSize="@dimen/activity_size_font" />
+            android:orientation="vertical" >
 
-        <Button
-            android:id="@+id/btnNewExpense"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/menu_newexpense"
-            android:textSize="@dimen/activity_size_font" />
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/menu_income"
+                android:textSize="@dimen/activity_size_font" />
 
-    </LinearLayout>
+            <TextView
+                android:id="@+id/txtIncome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="@dimen/activity_size_font" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="74dp"
-        android:layout_weight="1"
-        android:orientation="horizontal">
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/menu_expense"
+                android:textSize="@dimen/activity_size_font" />
 
-        <Button
-            android:id="@+id/btnIncome"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/menu_income"
-            android:textSize="@dimen/activity_size_font" />
+            <TextView
+                android:id="@+id/txtExpense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="@dimen/activity_size_font" />
 
-        <Button
-            android:id="@+id/btnExpense"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/menu_expense"
-            android:textSize="@dimen/activity_size_font" />
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/menu_balance"
+                android:textSize="@dimen/activity_size_font" />
 
-    </LinearLayout>
+            <TextView
+                android:id="@+id/txtBalance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="@dimen/activity_size_font" />
 
-    <Button
-        android:id="@+id/btnSetting"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="@string/menu_setting"
-        android:textSize="@dimen/activity_size_font" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="180dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnNewIncome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/menu_newincome"
+                    android:textSize="@dimen/activity_size_font" />
+
+                <Button
+                    android:id="@+id/btnNewExpense"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/menu_newexpense"
+                    android:textSize="@dimen/activity_size_font" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnIncome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/menu_income"
+                    android:textSize="@dimen/activity_size_font" />
+
+                <Button
+                    android:id="@+id/btnExpense"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/menu_expense"
+                    android:textSize="@dimen/activity_size_font" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/menu_logouut" />
+
+            <Button
+                android:id="@+id/btnSetting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/menu_setting"
+                android:textSize="@dimen/activity_size_font" />
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

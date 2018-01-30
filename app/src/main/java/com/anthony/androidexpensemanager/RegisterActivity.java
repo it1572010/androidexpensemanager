@@ -27,14 +27,14 @@ public class RegisterActivity extends AppCompatActivity {
 
     @OnClick(R.id.btnRegister)
     void btnRegisterAction(){
-        if(!txtName.getText().toString().trim().isEmpty() && !txtEmail.getText().toString().trim().isEmpty() &&
-                !txtPassword.getText().toString().trim().isEmpty() && !txtRePassword.getText().toString().trim().isEmpty()){
+        if(txtName.getText().toString().trim().isEmpty() || txtEmail.getText().toString().trim().isEmpty() ||
+                txtPassword.getText().toString().trim().isEmpty() || txtRePassword.getText().toString().trim().isEmpty()){
             AlertDialog alertDialog=new AlertDialog.Builder(RegisterActivity.this).create();
             alertDialog.setTitle("Warning !!!");
             alertDialog.setMessage("Any field need be filled");
             alertDialog.show();
         }
-        else if(txtPassword.getText().toString().trim() != txtRePassword.getText().toString().trim()){
+        else if(!txtPassword.getText().toString().trim().equals(txtRePassword.getText().toString().trim())){
             AlertDialog alertDialog=new AlertDialog.Builder(RegisterActivity.this).create();
             alertDialog.setTitle("Warning !!!");
             alertDialog.setMessage("Password and RePassword must same");

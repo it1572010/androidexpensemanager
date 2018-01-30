@@ -11,8 +11,20 @@
     android:orientation="vertical"
     tools:context="com.anthony.androidexpensemanager.ReportIncomeActivity">
 
-    <Spinner
-        android:id="@+id/cmbBulan"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Spinner
+                android:id="@+id/cmbBulan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
 </LinearLayout>
