@@ -69,9 +69,17 @@
                 android:text="@string/income_time"
                 android:textSize="@dimen/activity_size_font" />
 
-            <DatePicker
+            <EditText
+                android:id="@+id/txtTime"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:clickable="true"
+                android:editable="false"
+                android:onClick="onClickTxtTime"
+                android:inputType="textPersonName"
+                android:text=""
+                android:hint="@string/income_hint_time"/>
 
             <Button
                 android:id="@+id/btnSubmit"
