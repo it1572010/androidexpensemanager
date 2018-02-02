@@ -47,7 +47,7 @@ public class ExpenseActivity extends AppCompatActivity {
     };
 
     private void updateTxtTime(){
-        String format = "MM/DD/YYYY";
+        String format = "dd/MM/YYYY";
         SimpleDateFormat simpleDateFormat=new SimpleDateFormat(format, Locale.US);
         txtTime.setText(simpleDateFormat.format(calendar.getTime()));
     }

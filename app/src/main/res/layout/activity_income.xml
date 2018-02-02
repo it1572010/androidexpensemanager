@@ -44,7 +44,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="@string/income_money"
-                android:inputType="textPersonName"
+                android:inputType="number"
                 android:text="" />
 
             <TextView
@@ -77,7 +77,6 @@
                 android:clickable="true"
                 android:editable="false"
                 android:onClick="onClickTxtTime"
-                android:inputType="textPersonName"
                 android:text=""
                 android:hint="@string/income_hint_time"/>
 
