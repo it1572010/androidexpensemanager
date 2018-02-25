@@ -4,9 +4,13 @@ import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
+
+import com.anthony.androidexpensemanager.Entity.UserData;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -27,17 +31,35 @@ public class loginActivity extends AppCompatActivity {
 
     @OnClick(R.id.btnLogin)
     void btnLoginAction(){
-        if(txtEmail.getText().toString().trim().equals("admin@gmail.com") && txtPassword.getText().toString().trim().equals("admin")){
-            Intent movetoMenuActivity=new Intent(loginActivity.this,MenuActivity.class);
-            startActivity(movetoMenuActivity);
-            System.out.println("masuk if");
+        if(!TextUtils.isEmpty(txtEmail.getText().toString().trim()) && !TextUtils.isEmpty(txtPassword.getText().toString().trim())){
+            UserLoginTask userLoginTask=new UserLoginTask(this);
+            userLoginTask.execute(txtEmail.getText().toString().trim(),txtPassword.getText().toString().trim());
+        }else{
+            Toast.makeText(this,"Please fill email and password",Toast.LENGTH_SHORT).show();
+        }
+//        if(txtEmail.getText().toString().trim().equals("admin@gmail.com") && txtPassword.getText().toString().trim().equals("admin")){
+//            Intent movetoMenuActivity=new Intent(loginActivity.this,MenuActivity.class);
+//            startActivity(movetoMenuActivity);
+//            System.out.println("masuk if");
+//        }
+//        else{
+//            AlertDialog alertDialog=new AlertDialog.Builder(loginActivity.this).create();
+//            alertDialog.setTitle("Warning !!!");
+//            alertDialog.setMessage("Wrong email or password");
+//            alertDialog.show();
+//            System.out.println("masuk else");
+//        }
+    }
+
+    public void openMenuActivity(UserData userData){
+        if(null != userData && userData.getStatus()==1 && null != userData.getUser()){
+            Toast.makeText(this,userData.getMessage(),Toast.LENGTH_SHORT).show();
+            Intent moteToMenuActivity=new Intent(loginActivity.this,MenuActivity.class);
+            this.startActivity(moteToMenuActivity);
+            this.finish();
         }
         else{
-            AlertDialog alertDialog=new AlertDialog.Builder(loginActivity.this).create();
-            alertDialog.setTitle("Warning !!!");
-            alertDialog.setMessage("Wrong email or password");
-            alertDialog.show();
-            System.out.println("masuk else");
+            Toast.makeText(this,this.getResources().getString(R.string.user_not_approved),Toast.LENGTH_SHORT).show();
         }
     }
 
