@@ -30,4 +30,5 @@
     <string name="submit">Submit</string>
 
     <string name="user_not_approved">User not approved</string>
+    <string name="register_failed">Register Failed</string>
 </resources>

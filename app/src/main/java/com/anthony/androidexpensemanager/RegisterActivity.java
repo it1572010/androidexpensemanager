@@ -6,6 +6,9 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.EditText;
+import android.widget.Toast;
+
+import com.anthony.androidexpensemanager.Entity.UserData;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -41,20 +44,20 @@ public class RegisterActivity extends AppCompatActivity {
             alertDialog.show();
         }
         else{
-            new AlertDialog.Builder(RegisterActivity.this).setTitle("Confirmation !!!")
-                    .setMessage("Are you sure want to register?")
-                    .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialogInterface, int i) {
-                            Intent moveToLoginActivity=new Intent(RegisterActivity.this,loginActivity.class);startActivity(moveToLoginActivity);
-                        }
-                    })
-                    .setNegativeButton("No", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialogInterface, int i) {
+            UserRegisterTask userRegisterTask=new UserRegisterTask(this);
+            userRegisterTask.execute(txtName.getText().toString().trim(),txtEmail.getText().toString().trim(),txtPassword.getText().toString().trim());
+        }
 
-                        }
-                    }).show();
+    }
+
+    public void openLoginActivity(UserData userData){
+        if(null != userData && userData.getStatus()==1){
+            Toast.makeText(this,userData.getMessage(),Toast.LENGTH_SHORT).show();
+            Intent moveToLoginActivity=new Intent(RegisterActivity.this,loginActivity.class);
+            this.startActivity(moveToLoginActivity);
+            this.finish();
+        }else {
+            Toast.makeText(this,this.getResources().getString(R.string.register_failed),Toast.LENGTH_SHORT).show();
         }
     }
 }
