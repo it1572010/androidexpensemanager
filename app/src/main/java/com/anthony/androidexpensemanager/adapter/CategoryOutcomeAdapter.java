@@ -1,22 +1,28 @@
 package com.anthony.androidexpensemanager.adapter;
 
 import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.TextView;
 
 import com.anthony.androidexpensemanager.Entity.CategoryOutcome;
+import com.anthony.androidexpensemanager.R;
 
 import java.util.ArrayList;
 
 /**
- * Created by Win10 on 2/25/2018.
+ * Created by Anthony (1572010) on 2/25/2018.
  */
 
-public class CategoryOutcomeAdapter {
+public class CategoryOutcomeAdapter extends BaseAdapter{
     private ArrayList<CategoryOutcome> categoryOutcomes;
     private Context context;
 
-    public CategoryOutcomeAdapter(ArrayList<CategoryOutcome> categoryOutcomes, Context context) {
-        this.categoryOutcomes = categoryOutcomes;
+    public CategoryOutcomeAdapter(Context context) {
         this.context = context;
+        categoryOutcomes=new ArrayList<>();
     }
 
     public ArrayList<CategoryOutcome> getCategoryOutcomes() {
@@ -35,18 +41,30 @@ public class CategoryOutcomeAdapter {
         this.context = context;
     }
 
-    //@Override
-    public int getCount(){
+
+    @Override
+    public int getCount() {
         return categoryOutcomes.size();
     }
 
-    //@Override
-    public Object getCategoryOutcome(int position){
+    @Override
+    public Object getItem(int position) {
         return categoryOutcomes.get(position);
     }
 
-    //@Override
-    public long getCategoryOutcomeId(int position){
+    @Override
+    public long getItemId(int position) {
         return 0;
+    }
+
+    @Override
+    public View getView(int position, View convertView, ViewGroup parent) {
+        if(convertView==null){
+            convertView= LayoutInflater.from(context).inflate(R.layout.category_outcome_row_layout,parent,false);
+        }
+        CategoryOutcome categoryOutcome= (CategoryOutcome) getItem(position);
+        TextView textViewCategoryIncomeName=convertView.findViewById(R.id.txtCategoryOutcome);
+        textViewCategoryIncomeName.setText(categoryOutcome.getNameCategoryOutcome());
+        return convertView;
     }
 }

@@ -31,4 +31,6 @@
 
     <string name="user_not_approved">User not approved</string>
     <string name="register_failed">Register Failed</string>
+    <string name="add_income_failed">Add Income Failed</string>
+    <string name="add_expense_failed">Add Expense Failed</string>
 </resources>

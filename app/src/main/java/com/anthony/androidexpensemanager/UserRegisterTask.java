@@ -18,7 +18,7 @@ import java.net.URL;
 import java.net.URLEncoder;
 
 /**
- * Created by Win10 on 2/26/2018.
+ * Created by Anthony (1572010) on 2/26/2018.
  */
 
 public class UserRegisterTask extends AsyncTask<String, Void, UserData>{

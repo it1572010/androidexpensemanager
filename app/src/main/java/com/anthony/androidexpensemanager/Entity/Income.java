@@ -3,7 +3,7 @@ package com.anthony.androidexpensemanager.Entity;
 import java.util.Date;
 
 /**
- * Created by Win10 on 2/25/2018.
+ * Created by Anthony (1572010) on 2/25/2018.
  */
 
 public class Income {

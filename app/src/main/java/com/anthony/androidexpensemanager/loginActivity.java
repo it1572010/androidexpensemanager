@@ -20,6 +20,7 @@ public class loginActivity extends AppCompatActivity {
 
     @BindView(R.id.txtEmail) EditText txtEmail;
     @BindView(R.id.txtPassword) EditText txtPassword;
+    public int idUser;
 
 
     @Override
@@ -53,9 +54,11 @@ public class loginActivity extends AppCompatActivity {
 
     public void openMenuActivity(UserData userData){
         if(null != userData && userData.getStatus()==1 && null != userData.getUser()){
+            idUser=userData.getUser().getIdUser();
             Toast.makeText(this,userData.getMessage(),Toast.LENGTH_SHORT).show();
-            Intent moteToMenuActivity=new Intent(loginActivity.this,MenuActivity.class);
-            this.startActivity(moteToMenuActivity);
+            Intent moveToMenuActivity=new Intent(loginActivity.this,MenuActivity.class);
+            moveToMenuActivity.putExtra(Intent.EXTRA_TEXT,idUser);
+            this.startActivity(moveToMenuActivity);
             this.finish();
         }
         else{

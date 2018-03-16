@@ -1,13 +1,13 @@
 package com.anthony.androidexpensemanager.Entity;
 
 /**
- * Created by Anthony (1572010) on 2/25/2018.
+ * Created by Anthony (1572010) on 3/15/2018.
  */
 
-public class UserData {
+public class IncomeData {
     private int status;
     private String message;
-    private User user;
+    private Income income;
 
     public int getStatus() {
         return status;
@@ -25,11 +25,11 @@ public class UserData {
         this.message = message;
     }
 
-    public User getUser() {
-        return user;
+    public Income getIncome() {
+        return income;
     }
 
-    public void setUser(User user) {
-        this.user = user;
+    public void setIncome(Income income) {
+        this.income = income;
     }
 }

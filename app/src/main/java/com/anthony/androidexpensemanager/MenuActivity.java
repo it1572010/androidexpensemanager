@@ -11,11 +11,16 @@ import butterknife.OnClick;
 
 public class MenuActivity extends AppCompatActivity {
 
+    public String temp;
+    public int idUser;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
         ButterKnife.bind(this);
+        temp=getIntent().getStringExtra(Intent.EXTRA_TEXT);
+        idUser=Integer.valueOf(temp);
     }
 
     @OnClick(R.id.btnNewIncome)

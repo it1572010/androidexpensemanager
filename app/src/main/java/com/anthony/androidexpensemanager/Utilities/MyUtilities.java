@@ -16,7 +16,7 @@ import java.net.URL;
 import java.util.Scanner;
 
 /**
- * Created by Win10 on 2/13/2018.
+ * Created by Anthony (1572010) on 2/13/2018.
  */
 
 public class MyUtilities {
@@ -24,4 +24,10 @@ public class MyUtilities {
 
     public static final String LOGIN_URL = IP_CONFIG+"service/userLoginService.php";
     public static final String ADD_USER_URL = IP_CONFIG+"service/addUserService.php";
+    public static final String CATEGORY_INCOME_URL = IP_CONFIG+"service/getCategoriesIncomeService.php";
+    public static final String CATEGORY_OUTCOME_URL = IP_CONFIG+"service/getCategoriesOutcomeService.php";
+    public static final String USER_INCOME_URL = IP_CONFIG+"service/getIncomeService.php";
+    public static final String USER_OUTCOME_URL = IP_CONFIG+"service/getOutcomeService.php";
+    public static final String ADD_INCOME_URL = IP_CONFIG+"service/addIncomeService.php";
+    public static final String ADD_OUTCOME_URL = IP_CONFIG+"service/addOutcomeService.php";
 }
